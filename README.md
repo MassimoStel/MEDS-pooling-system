@@ -11,7 +11,7 @@ CogNosco Lab, University of Trento.
 
 <p align="center">
   <img src="logofis.png" alt="FIS logo" height="180">
-  <img src="MEDS_Logo.png" alt="MEDS logo" height="180">
+  <img src="PENSO_Logo.png" alt="MEDS logo" height="180">
 </p>
 
 **MEDS Pooling System** is an interactive dashboard for the *Math Education Digital Shadows (MEDS)* dataset. MEDS contains 28,000 LLM-generated digital shadows produced across 14 large language models under two prompting conditions: human-simulated personas and baseline AI-assistant responses. Each digital shadow links mathematical problem solving to confidence, psychometric scales, persona metadata, free-text explanations, and graph-based semantic association data.
