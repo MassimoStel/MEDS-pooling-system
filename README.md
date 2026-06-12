@@ -166,8 +166,6 @@ MEDS-pooling-system/
 │   ├── MEDS-pooling-system.png
 │   ├── MEDS_Logo.png
 │   └── logofis.png
-├── notebooks/
-│   └── colab_MEDS_pooling_system_dashboard.ipynb
 ├── src/
 │   └── meds_pooling/
 ├── LICENSE
