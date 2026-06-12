@@ -37,20 +37,7 @@ The pooling system is designed for researchers from multiple disciplinary backgr
 
 The goal is not to replace the raw MEDS files, but to make them easier to explore, subset, visualise, and reuse.
 
-## Quick start (Colab)
-
-Click the **Open in Colab** badge above, then run the two cells in order. The first run downloads the MEDS dashboard data file; subsequent runs in the same session use the local cache.
-
-```python
-# Cell 1
-!pip install --upgrade pandas panel git+TODO_GITHUB_REPOSITORY_URL --quiet
-
-# Cell 2
-import meds_pooling as meds
-meds.launch_dashboard()
-```
-
-## Quick start (local installation)
+## Quick start: Local installation
 
 Run the dashboard on your machine inside an isolated virtual environment.
 
