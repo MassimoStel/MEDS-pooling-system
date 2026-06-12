@@ -3,7 +3,6 @@
 **Math Education Digital Shadows (MEDS)** — Data Pooling Dashboard.  
 CogNosco Lab, University of Trento.
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](TODO_COLAB_NOTEBOOK_URL)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)
 [![Dataset](https://img.shields.io/badge/dataset-MEDS-blue.svg)](TODO_DATA_RELEASE_URL)
