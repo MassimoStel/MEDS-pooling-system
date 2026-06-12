@@ -45,7 +45,7 @@ Requires a **Python ≥ 3.11 interpreter and **Git**.
 
 ```bash
 git clone https://github.com/MassimoStel/MEDS-pooling-system.git
-cd TeachMe-pooling-system
+cd MEDS-pooling-system
 ```
 
 **2. Create the virtual environment**
