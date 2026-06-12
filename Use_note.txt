@@ -1,0 +1,14 @@
+git clone https://github.com/NaviDATA-Repos/TeachMe-pooling-system.git
+cd TeachMe-pooling-system
+python -m venv TeachMe
+
+# Activate the environment:
+#   Windows PowerShell:  TeachMe\Scripts\Activate.ps1
+#   Windows cmd:         TeachMe\Scripts\activate.bat
+#   Linux/Mac:           source TeachMe/bin/activate
+
+	In case PowerShell blocks the virtual environment activation: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+pip install .
+
+python -c "from TeachMe_pooling import launch_dashboard; launch_dashboard()"
