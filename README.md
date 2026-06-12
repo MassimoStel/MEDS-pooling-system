@@ -161,15 +161,26 @@ The raw MEDS release contains task-level JSON records. The pooling system provid
 ## Repository structure
 
 ```text
-MEDS-pooling-system/
-├── assets/
-│   ├── MEDS-pooling-system.png
-│   ├── MEDS_Logo.png
-│   └── logofis.png
-├── src/
-│   └── meds_pooling/
+TeachMe-pooling-system/
+├── README.md
 ├── LICENSE
-└── README.md
+├── Use_note.txt
+├── pyproject.toml
+├── .gitignore
+├── logofis.png
+├── PENSO_Logo.png
+└── src/
+    └── TeachMe_pooling/
+        ├── __init__.py
+        ├── _version.py
+        ├── config.py
+        ├── data.py
+        ├── dashboard.py
+        └── _ui/
+            ├── __init__.py
+            ├── builders.py
+            ├── components.py
+            └── tokens.py
 ```
 
 ## License
