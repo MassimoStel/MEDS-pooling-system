@@ -75,31 +75,13 @@ macOS / Linux:
 source .venv_meds/bin/activate
 ```
 
-**3. Install the package**
-
-```bash
-pip install git+TODO_GITHUB_REPOSITORY_URL
-```
-
-**4. Launch the dashboard**
+**3. Launch the dashboard**
 
 ```bash
 python -c "import meds_pooling as meds; meds.launch_dashboard()"
 ```
 
 A browser tab will open automatically. On first launch, the data file is downloaded and cached locally.
-
-## Persistent caching on Colab (optional)
-
-By default, Colab caches the data file only for the current runtime. To persist the cache across sessions, mount Google Drive and point the dashboard to a Drive folder:
-
-```python
-from google.colab import drive
-drive.mount('/content/drive')
-
-import meds_pooling as meds
-meds.launch_dashboard(cache_dir='/content/drive/MyDrive/MEDS-pooling/')
-```
 
 ## Programmatic API
 
