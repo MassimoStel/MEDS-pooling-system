@@ -38,37 +38,72 @@ The goal is not to replace the raw MEDS files, but to make them easier to explor
 
 ## Quick start: Local installation
 
-Run the dashboard on your machine inside an isolated virtual environment.
+The dashboard runs locally inside an isolated virtual environment.
+Requires a **Python ≥ 3.11 interpreter and **Git**.
 
-**1. Create the virtual environment**  
-Requires a Python ≥3.11 interpreter.
+**1. Clone the repository**
 
 ```bash
-python -m venv .venv_meds
+git clone https://github.com/MassimoStel/MEDS-pooling-system.git
+cd TeachMe-pooling-system
 ```
 
-**2. Activate the environment**
+**2. Create the virtual environment**
+
+```bash
+python -m venv TeachMe
+```
+
+**3. Activate the environment**
 
 Windows PowerShell:
 
 ```powershell
-.venv_meds\Scripts\Activate.ps1
+TeachMe\Scripts\Activate.ps1
+```
+
+> If PowerShell blocks the activation script ("running scripts is disabled"), run
+> `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` and activate again.
+
+Windows cmd:
+
+```bat
+TeachMe\Scripts\activate.bat
 ```
 
 macOS / Linux:
 
 ```bash
-source .venv_meds/bin/activate
+source TeachMe/bin/activate
 ```
 
-**3. Launch the dashboard**
+**4. Install the package**
 
 ```bash
-python -c "import meds_pooling as meds; meds.launch_dashboard()"
+pip install .
 ```
 
-A browser tab will open automatically. On first launch, the data file is downloaded and cached locally.
+**5. Launch the dashboard**
 
+```bash
+python -c "from TeachMe_pooling import launch_dashboard; launch_dashboard()"
+```
+
+A browser tab will open automatically. On first launch, the data file (~64 MB) is
+downloaded from the GitHub release, verified, and cached locally — subsequent
+launches reuse the cache. The terminal stays busy while the dashboard is running;
+press `Ctrl+C` to stop it.
+
+## Using the data programmatically
+
+```python
+from TeachMe_pooling import load_pool, search_personas
+
+df = load_pool()                                  # download (if needed) + load + normalize
+women = search_personas(df, gender="woman")       # filter by any socio-demographic column
+```
+
+The `edges` column is provided as lists of tuples, ready for `networkx` / EmoAtlas.
 ## Programmatic API
 
 ```python
