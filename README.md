@@ -97,7 +97,7 @@ press `Ctrl+C` to stop it.
 ## Using the data programmatically
 
 ```python
-from TeachMe_pooling import load_pool, search_personas
+
 
 df = load_pool()                                  # download (if needed) + load + normalize
 women = search_personas(df, gender="woman")       # filter by any socio-demographic column
